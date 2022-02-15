@@ -55,6 +55,6 @@ android {
 	}
 dependencies {
 	copyButtonEx
-	compile project(":BTLib")
+	implementation project(":BTLib")
 }
 

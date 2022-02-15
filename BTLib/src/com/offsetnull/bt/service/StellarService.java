@@ -106,7 +106,7 @@ public class StellarService extends Service {
 	private IConnectionBinder.Stub mBinder = new ServiceBinder();
 	
 	static {
-		System.loadLibrary("sqlite3");
+//		System.loadLibrary("sqlite3");
 		System.loadLibrary("lua");
 	}
 	

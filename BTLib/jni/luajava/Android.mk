@@ -1,3 +1,4 @@
+APP_ABI := armeabi
 LOCAL_PATH := $(call my-dir)
 
 
@@ -41,7 +42,7 @@ ifeq ($(TARGET_ARCH_ABI),mips)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := luajit
-LOCAL_SRC_FILES := libluajit-mips.a
+#LOCAL_SRC_FILES := libluajit-mips.a
 include $(PREBUILT_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)

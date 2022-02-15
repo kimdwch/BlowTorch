@@ -22,12 +22,11 @@ android {
 			jniLibs.srcDirs = ['libs']
 		}
 	}
-
 }
 
 dependencies {
-	compile "com.android.support:support-core-utils:27.1.1"
-	compile "com.android.support:appcompat-v7:27.1.1"
-	compile "com.android.support:support-compat:27.1.1"
-	compile "com.android.support:design:27.1.1"
+	implementation "com.android.support:support-core-utils:27.1.1"
+	implementation "com.android.support:appcompat-v7:27.1.1"
+	implementation "com.android.support:support-compat:27.1.1"
+	implementation "com.android.support:design:27.1.1"
 }

@@ -3,13 +3,18 @@
       package="com.offsetnull.bt"
       android:versionCode="11"
       android:versionName="1.0.7">
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
     <application android:label="BlowTorch" android:theme="@android:style/Theme.NoTitleBar">
         <!-- android:windowSoftInputMode="adjustResize" -->
         <activity android:name="com.happygoatstudios.bt.window.MainWindow"
         		  android:windowSoftInputMode="adjustPan|stateHidden"
         		  android:label="BlowTorch"
-        		 
-        		  
+
+
 				  android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"
         		  android:launchMode = "singleTask">
         		  <intent-filter>
@@ -23,14 +28,7 @@
         		 	<action android:name="com.happygoatstudios.bt.service.IStellarService"/>
         		 </intent-filter>
         </service>
-        		  
+
 
     </application>
-    <uses-sdk android:minSdkVersion="14" />
-    <uses-permission android:name="android.permission.VIBRATE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-	<uses-permission android:name="android.permission.WAKE_LOCK" />
-
-</manifest> 
+</manifest>
